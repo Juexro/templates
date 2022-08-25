@@ -1,0 +1,65 @@
+.ant-modal {
+  .custom-modal-footer {
+    text-align: right;
+    .ant-btn {
+      width: 90px;
+      & + .ant-btn {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &.ant-modal-contextmenu {
+    margin: 0;
+    padding-bottom: 0;
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+
+  .contextmenu-list {
+    padding: 4px 0;
+    line-height: 2;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    &-category {
+      &__title {
+        font-size: 12px;
+        color: #999;
+        padding-left: 8px;
+      }
+      .contextmenu-list-item {
+        padding-left: 16px;
+      }
+    }
+    &-item {
+      padding-left: 8px;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:hover {
+        background-color: #e6e6e6;
+      }
+      &.is-disabled {
+        color: #dfdfdf;
+        cursor: not-allowed;
+        background-color: transparent;
+      }
+    }
+
+    // .contextmenu-list-category + .contextmenu-list-category,
+    .contextmenu-list-category + .contextmenu-list-item,
+    .contextmenu-list-item + .contextmenu-list-category {
+      border-top: 1px solid #dfdfdf;
+    }
+  }
+
+  &.custom-loading-modal {
+    .ant-spin-text {
+      color: #fff;
+      font-size: 12px;
+    }
+    .ant-spin-dot-item {
+      background-color: #fff;
+    }
+  }
+}

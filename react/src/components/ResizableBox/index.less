@@ -1,0 +1,38 @@
+.resizable-box {
+  position: relative;
+  height: 200px;
+  flex-shrink: 0;
+  &__edge {
+    position: absolute;
+    user-select: none;
+    z-index: 10;
+    &.is-top {
+      width: 100%;
+      height: 10px;
+      top: -5px;
+      left: 0px;
+      cursor: row-resize;
+    }
+    &.is-bottom {
+      width: 100%;
+      height: 10px;
+      bottom: -5px;
+      left: 0;
+      cursor: row-resize;
+    }
+    &.is-left {
+      width: 10px;
+      height: 100%;
+      top: 0px;
+      left: -5px;
+      cursor: col-resize;
+    }
+    &.is-right {
+      width: 10px;
+      height: 100%;
+      top: 0px;
+      right: -5px;
+      cursor: col-resize;
+    }
+  }
+}

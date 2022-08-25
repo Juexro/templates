@@ -1,0 +1,6 @@
+/config-overrides.js
+/.eslintrc.js
+package.json
+/public/**/*
+tsconfig.json
+tsconfig.extends.json
